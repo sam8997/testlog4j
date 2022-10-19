@@ -1,0 +1,281 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 4/11/22 4:37 AM
+Description: Watching Server
+
+java.lang.Error: Watchdog
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at com.sun.jndi.ldap.Connection.readReply(Connection.java:493)
+	at com.sun.jndi.ldap.LdapClient.ldapBind(LdapClient.java:365)
+	at com.sun.jndi.ldap.LdapClient.authenticate(LdapClient.java:192)
+	at com.sun.jndi.ldap.LdapCtx.connect(LdapCtx.java:2791)
+	at com.sun.jndi.ldap.LdapCtx.<init>(LdapCtx.java:319)
+	at com.sun.jndi.url.ldap.ldapURLContextFactory.getUsingURLIgnoreRootDN(ldapURLContextFactory.java:60)
+	at com.sun.jndi.url.ldap.ldapURLContext.getRootURLContext(ldapURLContext.java:61)
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:202)
+	at com.sun.jndi.url.ldap.ldapURLContext.lookup(ldapURLContext.java:94)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.JndiManager.lookup(JndiManager.java:129)
+	at org.apache.logging.log4j.core.lookup.JndiLookup.lookup(JndiLookup.java:54)
+	at org.apache.logging.log4j.core.lookup.Interpolator.lookup(Interpolator.java:183)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.resolveVariable(StrSubstitutor.java:1054)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:976)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:872)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.replace(StrSubstitutor.java:427)
+	at org.apache.logging.log4j.core.pattern.MessagePatternConverter.format(MessagePatternConverter.java:127)
+	at org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:38)
+	at org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:333)
+	at org.apache.logging.log4j.core.layout.PatternLayout.toText(PatternLayout.java:232)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:217)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:57)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:177)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:170)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:161)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2091)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1988)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1960)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:1297)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:984)
+	at acu.a(SourceFile:810)
+	at aay.c(SourceFile:1201)
+	at aay$$Lambda$3983/847736834.accept(Unknown Source)
+	at aay.b(SourceFile:314)
+	at aay$$Lambda$3985/1770361029.accept(Unknown Source)
+	at aay.a(SourceFile:324)
+	at aay$$Lambda$3986/1080869297.run(Unknown Source)
+	at wb.run(SourceFile:18)
+	at aob.c(SourceFile:144)
+	at aof.c(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:761)
+	at net.minecraft.server.MinecraftServer.c(SourceFile:155)
+	at aob.y(SourceFile:118)
+	at net.minecraft.server.MinecraftServer.bb(SourceFile:743)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:737)
+	at aob.c(SourceFile:127)
+	at net.minecraft.server.MinecraftServer.x(SourceFile:722)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:674)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:257)
+	at net.minecraft.server.MinecraftServer$$Lambda$3316/1979249423.run(Unknown Source)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at com.sun.jndi.ldap.Connection.readReply(Connection.java:493)
+	at com.sun.jndi.ldap.LdapClient.ldapBind(LdapClient.java:365)
+	at com.sun.jndi.ldap.LdapClient.authenticate(LdapClient.java:192)
+	at com.sun.jndi.ldap.LdapCtx.connect(LdapCtx.java:2791)
+	at com.sun.jndi.ldap.LdapCtx.<init>(LdapCtx.java:319)
+	at com.sun.jndi.url.ldap.ldapURLContextFactory.getUsingURLIgnoreRootDN(ldapURLContextFactory.java:60)
+	at com.sun.jndi.url.ldap.ldapURLContext.getRootURLContext(ldapURLContext.java:61)
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:202)
+	at com.sun.jndi.url.ldap.ldapURLContext.lookup(ldapURLContext.java:94)
+	at javax.naming.InitialContext.lookup(InitialContext.java:417)
+	at org.apache.logging.log4j.core.net.JndiManager.lookup(JndiManager.java:129)
+	at org.apache.logging.log4j.core.lookup.JndiLookup.lookup(JndiLookup.java:54)
+	at org.apache.logging.log4j.core.lookup.Interpolator.lookup(Interpolator.java:183)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.resolveVariable(StrSubstitutor.java:1054)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:976)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:872)
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.replace(StrSubstitutor.java:427)
+	at org.apache.logging.log4j.core.pattern.MessagePatternConverter.format(MessagePatternConverter.java:127)
+	at org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:38)
+	at org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:333)
+	at org.apache.logging.log4j.core.layout.PatternLayout.toText(PatternLayout.java:232)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:217)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:57)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:177)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:170)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:161)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2091)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1988)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1960)
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:1297)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:984)
+	at acu.a(SourceFile:810)
+	at aay.c(SourceFile:1201)
+	at aay$$Lambda$3983/847736834.accept(Unknown Source)
+	at aay.b(SourceFile:314)
+	at aay$$Lambda$3985/1770361029.accept(Unknown Source)
+	at aay.a(SourceFile:324)
+	at aay$$Lambda$3986/1080869297.run(Unknown Source)
+	at wb.run(SourceFile:18)
+	at aob.c(SourceFile:144)
+	at aof.c(SourceFile:23)
+	at net.minecraft.server.MinecraftServer.b(SourceFile:761)
+	at net.minecraft.server.MinecraftServer.c(SourceFile:155)
+	at aob.y(SourceFile:118)
+	at net.minecraft.server.MinecraftServer.bb(SourceFile:743)
+	at net.minecraft.server.MinecraftServer.y(SourceFile:737)
+	at aob.c(SourceFile:127)
+	at net.minecraft.server.MinecraftServer.x(SourceFile:722)
+	at net.minecraft.server.MinecraftServer.w(SourceFile:674)
+	at net.minecraft.server.MinecraftServer.a(SourceFile:257)
+
+-- Thread Dump --
+Details:
+	Threads: "Thread-11" Id=55 RUNNABLE (in native)
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	-  locked java.io.BufferedInputStream@557aa929
+	at com.sun.jndi.ldap.Connection.run(Connection.java:877)
+	...
+
+
+"Netty Epoll Server IO #1" Id=41 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Server Watchdog" Id=40 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(ThreadImpl.java:454)
+	at zj.run(SourceFile:49)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Netty Epoll Server IO #0" Id=34 RUNNABLE (in native)
+	at io.netty.channel.epoll.Native.epollWait0(Native Method)
+	at io.netty.channel.epoll.Native.epollWait(Native.java:114)
+	at io.netty.channel.epoll.EpollEventLoop.epollWait(EpollEventLoop.java:239)
+	at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:256)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"ObjectCleanerThread" Id=33 TIMED_WAITING on java.lang.ref.ReferenceQueue$Lock@5bbd5df6
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@5bbd5df6
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at io.netty.util.internal.ObjectCleaner$1.run(ObjectCleaner.java:54)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+"Server console handler" Id=32 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(FileInputStream.java:255)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:284)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	-  locked java.io.BufferedInputStream@5f82c259
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	-  locked java.io.InputStreamReader@1a8057cd
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	...
+
+
+"DestroyJavaVM" Id=31 RUNNABLE
+
+
+"Server thread" Id=28 WAITING on com.sun.jndi.ldap.LdapRequest@2b502a08
+	at java.lang.Object.wait(Native Method)
+	-  waiting on com.sun.jndi.ldap.LdapRequest@2b502a08
+	at java.lang.Object.wait(Object.java:502)
+	at com.sun.jndi.ldap.Connection.readReply(Connection.java:493)
+	at com.sun.jndi.ldap.LdapClient.ldapBind(LdapClient.java:365)
+	-  locked com.sun.jndi.ldap.LdapClient@1a339655
+	at com.sun.jndi.ldap.LdapClient.authenticate(LdapClient.java:192)
+	-  locked com.sun.jndi.ldap.LdapClient@1a339655
+	at com.sun.jndi.ldap.LdapCtx.connect(LdapCtx.java:2791)
+	at com.sun.jndi.ldap.LdapCtx.<init>(LdapCtx.java:319)
+	at com.sun.jndi.url.ldap.ldapURLContextFactory.getUsingURLIgnoreRootDN(ldapURLContextFactory.java:60)
+	...
+
+
+"Snooper Timer" Id=29 WAITING on java.util.TaskQueue@6209b531
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@6209b531
+	at java.lang.Object.wait(Object.java:502)
+	at java.util.TimerThread.mainLoop(Timer.java:526)
+	at java.util.TimerThread.run(Timer.java:505)
+
+
+"Timer hack thread" Id=20 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at x$6.run(SourceFile:636)
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@7aafa882
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@7aafa882
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:165)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:216)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@7ca818bc
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@7ca818bc
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+
+
+Stacktrace:
+	at zj.run(SourceFile:65)
+	at java.lang.Thread.run(Thread.java:748)
+
+-- Performance stats --
+Details:
+	Random tick rate: 3
+	Level stats: ResourceKey[minecraft:dimension / minecraft:overworld]: players: 1, entities: 259 [minecraft:sheep:43,minecraft:chicken:35,minecraft:item:27,minecraft:pig:25,minecraft:creeper:23], block_entities: 8 [minecraft:mob_spawner:4,minecraft:chest:4], block_ticks: 104, fluid_ticks: 935, chunk_source: ServerChunkCache: 2416,
+ResourceKey[minecraft:dimension / minecraft:the_nether]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0,
+ResourceKey[minecraft:dimension / minecraft:the_end]: players: 0, entities: 0 [], block_entities: 0 [], block_ticks: 0, fluid_ticks: 0, chunk_source: ServerChunkCache: 0
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Linux (amd64) version 5.4.72-microsoft-standard-WSL2
+	Java Version: 1.8.0_191, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 246771328 bytes (235 MB) / 727187456 bytes (693 MB) up to 954728448 bytes (910 MB)
+	CPUs: 12
+	JVM Flags: 2 total; -Xmx1024M -Xmx1024M
+	Player Count: 1 / 20; [aah['happy411509'/180, l='ServerLevel[world]', x=58.00, y=56.56, z=35.63]]
+	Data Packs: vanilla
+	Is Modded: Unknown (can't tell)
+	Type: Dedicated Server (map_server.txt)

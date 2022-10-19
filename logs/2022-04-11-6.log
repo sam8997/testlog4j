@@ -1,0 +1,31 @@
+[14:52:14] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:52:15] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:52:15] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:52:15] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:52:15] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:52:15] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:52:15] [main/INFO]: Reloading ResourceManager: Default
+[14:52:15] [Worker-Main-14/INFO]: Loaded 7 recipes
+[14:52:16] [Worker-Main-14/INFO]: Loaded 927 advancements
+[14:52:17] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[14:52:17] [Server thread/INFO]: Loading properties
+[14:52:17] [Server thread/INFO]: Default game type: SURVIVAL
+[14:52:17] [Server thread/INFO]: Generating keypair
+[14:52:18] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:52:18] [Server thread/INFO]: Using default channel type
+[14:52:28] [Server thread/INFO]: Preparing level "world"
+[14:52:28] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:52:29] [Server thread/INFO]: Preparing spawn area: 0%
+[14:52:29] [Server thread/INFO]: Preparing spawn area: 0%
+[14:52:29] [Server thread/INFO]: Preparing spawn area: 0%
+[14:52:30] [Server thread/INFO]: Time elapsed: 1544 ms
+[14:52:30] [Server thread/INFO]: Done (1.651s)! For help, type "help"
+[14:52:48] [User Authenticator #1/INFO]: UUID of player happy411509 is 0954ed57-070f-4e3e-840a-7c9204d33e14
+[14:52:48] [Server thread/INFO]: happy411509[/127.0.0.1:1886] logged in with entity id 178 at (57.30000001192093, 56.0, 35.81433627830528)
+[14:52:48] [Server thread/INFO]: happy411509 joined the game
+[14:53:58] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[14:54:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6259ms or 125 ticks behind
+[14:55:39] [Server Watchdog/FATAL]: A single server tick took 60.00 seconds (should be max 0.05)
+[14:55:39] [Server Watchdog/FATAL]: Considering it to be crashed, server will forcibly shutdown.
+[14:55:39] [Server Watchdog/ERROR]: This crash report has been saved to: D:\Downloads\log4j\.\crash-reports\crash-2022-04-11_14.55.39-server.txt

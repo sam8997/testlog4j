@@ -1,0 +1,88 @@
+[14:25:32] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[14:25:33] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:25:33] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:25:33] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:25:33] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[14:25:33] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[14:25:33] [main/INFO]: Reloading ResourceManager: Default
+[14:25:34] [Worker-Main-10/INFO]: Loaded 7 recipes
+[14:25:34] [Worker-Main-10/INFO]: Loaded 927 advancements
+[14:25:36] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[14:25:36] [Server thread/INFO]: Loading properties
+[14:25:36] [Server thread/INFO]: Default game type: SURVIVAL
+[14:25:36] [Server thread/INFO]: Generating keypair
+[14:25:37] [Server thread/INFO]: Starting Minecraft server on *:25565
+[14:25:37] [Server thread/INFO]: Using default channel type
+[14:25:46] [Server thread/INFO]: Preparing level "world"
+[14:26:09] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[14:26:10] [Server thread/INFO]: Preparing spawn area: 0%
+[14:26:10] [Server thread/INFO]: Preparing spawn area: 0%
+[14:26:10] [Server thread/INFO]: Time elapsed: 1007 ms
+[14:26:10] [Server thread/INFO]: Done (24.205s)! For help, type "help"
+[14:26:17] [User Authenticator #1/INFO]: UUID of player happy411509 is 0954ed57-070f-4e3e-840a-7c9204d33e14
+[14:26:17] [Server thread/INFO]: happy411509[/127.0.0.1:1560] logged in with entity id 171 at (57.30000001192093, 56.0, 35.81433627830528)
+[14:26:17] [Server thread/INFO]: happy411509 joined the game
+[14:27:13] [Server thread/FATAL]: Error executing task on Server
+org.apache.logging.log4j.core.appender.AppenderLoggingException: An exception occurred processing Appender ServerGuiConsole
+	at org.apache.logging.log4j.core.appender.DefaultErrorHandler.error(DefaultErrorHandler.java:75) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.handleAppenderError(AppenderControl.java:165) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:158) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:129) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:120) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:84) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:448) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:433) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:417) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:403) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:63) ~[server.jar:?]
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:146) ~[server.jar:?]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessageSafely(AbstractLogger.java:2091) ~[server.jar:?]
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1988) ~[server.jar:?]
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1960) ~[server.jar:?]
+	at org.apache.logging.log4j.spi.AbstractLogger.info(AbstractLogger.java:1297) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.a(SourceFile:984) ~[server.jar:?]
+	at acu.a(SourceFile:810) ~[server.jar:?]
+	at aay.c(SourceFile:1201) ~[server.jar:?]
+	at aay.b(SourceFile:314) ~[server.jar:?]
+	at aay.a(SourceFile:324) ~[server.jar:?]
+	at wb.run(SourceFile:18) ~[server.jar:?]
+	at aob.c(SourceFile:144) ~[server.jar:?]
+	at aof.c(SourceFile:23) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.b(SourceFile:761) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.c(SourceFile:155) ~[server.jar:?]
+	at aob.y(SourceFile:118) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.bb(SourceFile:743) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.y(SourceFile:737) ~[server.jar:?]
+	at aob.c(SourceFile:127) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.x(SourceFile:722) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.w(SourceFile:674) ~[server.jar:?]
+	at net.minecraft.server.MinecraftServer.a(SourceFile:257) ~[server.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_181]
+Caused by: java.lang.NumberFormatException: For input string: "1389:Log4jRCE"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65) ~[?:1.8.0_181]
+	at java.lang.Integer.parseInt(Integer.java:580) ~[?:1.8.0_181]
+	at java.lang.Integer.parseInt(Integer.java:615) ~[?:1.8.0_181]
+	at com.sun.jndi.toolkit.url.Uri.parse(Uri.java:232) ~[?:1.8.0_181]
+	at com.sun.jndi.toolkit.url.Uri.init(Uri.java:138) ~[?:1.8.0_181]
+	at com.sun.jndi.ldap.LdapURL.<init>(LdapURL.java:82) ~[?:1.8.0_181]
+	at com.sun.jndi.url.ldap.ldapURLContextFactory.getUsingURLIgnoreRootDN(ldapURLContextFactory.java:58) ~[?:1.8.0_181]
+	at com.sun.jndi.url.ldap.ldapURLContext.getRootURLContext(ldapURLContext.java:61) ~[?:1.8.0_181]
+	at com.sun.jndi.toolkit.url.GenericURLContext.lookup(GenericURLContext.java:202) ~[?:1.8.0_181]
+	at com.sun.jndi.url.ldap.ldapURLContext.lookup(ldapURLContext.java:94) ~[?:1.8.0_181]
+	at javax.naming.InitialContext.lookup(InitialContext.java:417) ~[?:1.8.0_181]
+	at org.apache.logging.log4j.core.net.JndiManager.lookup(JndiManager.java:129) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.JndiLookup.lookup(JndiLookup.java:54) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.Interpolator.lookup(Interpolator.java:183) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.resolveVariable(StrSubstitutor.java:1054) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:976) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.substitute(StrSubstitutor.java:872) ~[server.jar:?]
+	at org.apache.logging.log4j.core.lookup.StrSubstitutor.replace(StrSubstitutor.java:427) ~[server.jar:?]
+	at org.apache.logging.log4j.core.pattern.MessagePatternConverter.format(MessagePatternConverter.java:127) ~[server.jar:?]
+	at org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:38) ~[server.jar:?]
+	at org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:333) ~[server.jar:?]
+	at org.apache.logging.log4j.core.layout.PatternLayout$PatternSerializer.toSerializable(PatternLayout.java:323) ~[server.jar:?]
+	at org.apache.logging.log4j.core.layout.PatternLayout.toSerializable(PatternLayout.java:208) ~[server.jar:?]
+	at org.apache.logging.log4j.core.layout.PatternLayout.toSerializable(PatternLayout.java:57) ~[server.jar:?]
+	at com.mojang.util.QueueLogAppender.append(QueueLogAppender.java:39) ~[server.jar:?]
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:156) ~[server.jar:?]
+	... 31 more

